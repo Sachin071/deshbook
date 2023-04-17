@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+}
+
+:root{
+    --background-color : #fcf6ed;
+    --hover-color : #e5621b;
+    --text-color : #fff;
+    --shadow-prop : 0rem 0.5rem 0.7rem -0.7rem rgba(0,0,0,0.75);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.fb__sidebarRow > img,
+.fb__messageSender-top > img,
+.fb__post-top > img{
+    width : 5rem;
+    height : 5rem;
+    border-radius: 50%;
+}
+
+.app{
+    background-color: #e5e2df;
+}
+
+.app__body{
+    display: flex;
+}
+
+/* Header Component css Start */
+.fb__header{
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0rem 0.5rem 0.8rem -0.9rem rgba(0,0,0,0.75) ;
+}
+
+.fb__header-left {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fb__header-left__input{
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 62.43rem;
+}
+
+.fb__header-left__input > i{
+    font-size : 2rem;
+}
+
+.fb__header-left__input > input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+
+.fb__header-left > img{
+    height : 4rem;
+}
+
+.fb__header-middle{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.fb__header-middle__option > i
+{
+    color: gray;
+    font-size: xx-large;
+}
+
+.fb__header-middle__option:hover > i{
+    color: var(--hover-color);
+    
+}
+
+.fb__header-middle__option{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    cursor: pointer;
+}
+
+.fb__header-middle__option:hover {
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    align-items: center;
+    padding: 0 3rem;
+    border-radius: none;
+}
+
+.fb__header-middle__option--active > i{
+    color : var(--hover-color)
+}
+
+.fb__header-middle__option--active{
+    border-bottom: 0.4rem solid var(--hover-color);
+}
+
+.fb__header-right{
+    display: flex;
+}
+
+.fb__header-right__info{
+    display: flex;
+    align-items: center;
+}
+
+.fb__header-right__info > h4{
+    margin-left: 1rem;
+}
+
+
+
+.fb__header-right__info > i {
+    color: gray;
+    font-size: 4rem;
+}
+
+.fb__header-right__button {
+    border: none;
+    background: none;
+}
+
+.fb__header-right__button > i{
+    color: gray;
+    font-size: 2rem;
+}
+
+/* Sidebar css Start */
+.fb__sidebar{
+    padding: 2.5rem 1rem;
+    flex: 0.33;
+}
+
+/* SidebarRow component css start */
+.fb__sidebarRow{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+.fb__sidebarRow:hover{
+    background-color: var(--background-color);
+    border-radius: 1rem;
+
+}
+.fb__sidebarRow > h4{
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+.fb__sidebarRow > i{
+    font-size: large;
+    color: var(--hover-color);
+}
+
+/* Feed component css start */
+.fb__feed{
+    flex: 1;
+    padding: 3rem 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Story Component css start */
+
+.fb__story{
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 13rem;
+    height: 20rem;
+    box-shadow: 0rem 0.5rem 1.7rem -0.7rem rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    margin-right: 1rem;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+}
+
+.fb__story:hover{
+    transform : scale(1.07);
+}
+
+.fb__story > h4{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--text-color);
+}
+
+
+/* StoryReel Component css start */
+
+.fb__storyReel{
+    display: flex;
+}
+
+/* MessageSender Component css start */
+.fb__messageSender{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-prop);
+    width: 100%;
+}
+
+.fb__messageSender-top{
+    display: flex;
+    border-bottom: 0.1rem solid #eff2f5;
+    padding: 1.5rem;
+}
+
+.fb__messageSender-top > form{
+    flex: 1;
+    display: flex;
+}
+
+.fb__messageSender-top > form > input{
+    outline-width: 0;
+    border: none;
+    padding: 0.5rem 2rem;
+    margin: 0 1rem;
+    border-radius: 99.9rem;
+    background-color: #eff2f5;
+}
+
+.fb__messageSender-top > form > button{
+    display: none;
+}
+
+.fb__messageSender-top__input{
+    flex: 1;
+}
+
+.fb__messageSender-bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fb__messageSender-bottom__option{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 0.5rem;
+}
+
+.fb__messageSender-bottom__option > h3{
+    font-size: medium;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.fb__messageSender-bottom__option:hover{
+    background-color: #eff2f5;
+    border-radius: 2rem;
+}
+
+/* Post Component css start */
+
+.fb__post{
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: var(--shadow-prop);
+}
+
+.fb__post-top{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.fb__post-top__avatar{
+    margin-right: 1rem;
+}
+
+.fb__post-top__info > h3{
+    font-size: medium;
+}
+
+.fb__post-top__info > p{
+    font-size: small;
+    color: gray;
+}
+
+.fb__post-bottom{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.fb__post-image > img{
+    width: 100%;
+}
+
+.fb__post-options{
+    padding: 1rem;
+    border-top: 0.1rem solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: gray;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.fb__post-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.fb__post-option > p{
+    margin-left: 1rem;
+}
+
+.fb__post-option:hover {
+    background-color: #eff2f5;
+    border-radius: 1rem;
+}
+
+.fb__post-option > i{
+    font-size: large;
+}
+
+/* Login Component css start */
+.fb__login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.fb__login-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.fb__login > .fb__login-logo > img{
+    object-fit: contain;
+    height: 15rem;
+    margin: 2rem 0;
+}
+
+.fb__login > .fb__login-logo > h3{
+    color: var(--hover-color);
+    font-size: 3rem;
+    line-height: 3.5rem; 
+    font-weight: 800;
+    margin-left: 1.2rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.fb__login > button{
+    width: 30rem;
+    background-color: var(--hover-color);
+    color: #eff2f5;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    border: none;
+    outline: none;
+}
+
+.fb__login > button:hover{
+    background-color: #fff;
+    color: var(--hover-color);
+}
